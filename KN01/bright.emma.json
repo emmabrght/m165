@@ -1,0 +1,12 @@
+[{
+  "_id": {
+    "$oid": "66421a0dc9d5a49003acfd65"
+  },
+  "Name": "Emma",
+  "Nachname": "Bright",
+  "Age": 17,
+  "Grösse": 175,
+  "Geburtsdatum": {
+    "$date": "2006-05-23T00:00:00.000Z"
+  }
+}]
