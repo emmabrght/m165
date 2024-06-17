@@ -7,11 +7,11 @@ db.author.updateOne(
   db.books.updateMany(
     {
       $or: [
-        { publish_date: { $lt: new Date("2021-01-01") } },
-        { author_id: ObjectId("665dcc6e431c07cd693cf0a5") },
+        { publishedYear: { $lt: 2018 } },
+        { authorId: ObjectId("665dcc6e431c07cd693cf0a5") },
       ],
     },
-    { $set: { publish_date: new Date("2024-01-01") } }
+    { $set: { publishedYear: 2017 } }
   );
   
   db.genre.replaceOne(
